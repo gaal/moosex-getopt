@@ -3,8 +3,12 @@
 use strict;
 use warnings;
 
-use Test::More tests => 1;
+use Test::More 0.88;
+use Test::Warn 0.21;
+use Test::Requires 0.05;
+use Test::Exception 0.21;
 
-BEGIN {
-    use_ok('MooseX::Getopt');
-}
+use_ok('MooseX::Getopt');
+
+done_testing;
+
