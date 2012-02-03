@@ -24,7 +24,7 @@ sub process_argv {
         # just get the configfile arg now; the rest of the args will be
         # fetched later
         my $configfile;
-        my $opt_parser = Getopt::Long::Parser->new( config => [ qw( no_auto_help pass_through ) ] );
+        my $opt_parser = Getopt::Long::Parser->new( config => [ qw( no_auto_version no_auto_help pass_through ) ] );
         $opt_parser->getoptions( "configfile=s" => \$configfile );
 
         if(!defined $configfile) {
